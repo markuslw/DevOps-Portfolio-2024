@@ -1,0 +1,572 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #21252d;
+  color: white;
+  margin-top: 50px;
+}
+
+/*
+  error.js ----------------------------------------------
+*/
+.error-container {
+  text-align: center;
+  padding: 10%;
+}
+
+.error-container h1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.error-container h2 {
+  height: 50%;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*
+  login.js ----------------------------------------------
+*/
+.login-container {
+  display: grid;
+  justify-content: center;
+  margin: 5%;
+  color: white;
+}
+
+.login-field {
+  padding: 10px;
+  margin: 5px 10px 5px 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #333;
+}
+
+.login-submit {
+  padding: 10px;
+  margin: 15px 10px 5px 10px;
+  background-color: #2e2e2e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+.login-submit:hover {
+  background-color: #4984b8;
+}
+
+.signup-submit {
+  padding: 10px;
+  margin: 5px 10px 15px 10px;
+  background-color: #2e2e2e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+.signup-submit:hover {
+  background-color: #702963;
+}
+
+.login-logo {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px;
+}
+
+/*
+  header.js ----------------------------------------------
+*/
+.greeting {
+  padding: 7px;
+  margin: 0px 20px 0px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: default;
+  animation: opacityChange 1s ease-in-out forwards;
+}
+
+.header {
+  margin: 10px;
+  padding: 10px 10px 15px 10px;
+  font-weight: 600;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px -5px rgb(0 150 255 / 20%);
+  background-color: #1e1e1e;
+}
+
+.header-element {
+  padding: 7px;
+  margin: 0px 20px 0px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.4s;
+  animation: opacityChange 1s ease-in-out forwards;
+}
+
+.header-element:hover {
+  color: #4984b8;
+}
+
+.header a{
+  color:white;
+  text-decoration: none;
+}
+
+.landing-container {
+  display: grid;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.landing {
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+}
+
+/*
+  search.js -----------------------------------------------
+*/
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-bar-input {
+  outline: none;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  font-size: medium;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #333; /* Dark input fields */
+  color: #ddd; /* Light text for input */
+}
+
+/*
+  usercard.js ---------------------------------------------
+*/
+
+.usercard-container {
+  display: grid;
+  justify-content: center;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.card-element {
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  padding-right:300px;
+  margin: 0px 0px 0px 0px;
+  background-color: #1e1e1e;
+  color: #ccc; /* Light text for readability */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card-element img{
+  border: none;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  margin-bottom: -15px;
+}
+
+.card-element a {
+  text-decoration: none;
+  color: #555;
+  transition: all 0.4s;
+}
+.card-element a:hover {
+  color: #4984b8;
+}
+
+/* 
+  profile.js ----------------------------------------------
+*/
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.profile {
+  padding: 20px 200px 20px 20px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+}
+
+.profile p {
+  color: #555;
+  word-wrap: break-word;
+  width: 350px;
+}
+
+.profile-container img {
+  border: none;
+  border-radius: 50px;
+  height: 300px;
+  width: 300px;
+}
+
+.profile-container-button-container {
+  display: flex;
+}
+
+.profile-container-button-container button {
+  padding: 10px;
+  margin: 10px 10px 0px 0px;
+  background-color: #2e2e2e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.profile-container-button-container button:hover {
+  background-color: #702963;
+}
+
+.profile-container button[type="submit"] {
+  margin: 0px 0px 0px 0px;
+  padding: 10px;
+}
+
+.profile-container input[type="file"] {
+  width: 220px;
+}
+
+.profile-container-upload {
+  color: white;
+  cursor: pointer;
+  margin: 0px 10px 0px 0px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  transition: background-color 0.4s;
+}
+
+.profile-container-textform {
+  color: white;
+  cursor: pointer;
+  margin: 0px 10px 0px 0px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  transition: background-color 0.4s;
+}
+
+.profile-container-upload:hover {
+  background-color: #0056b3;
+}
+
+.profile-container input[type="file"]::file-selector-button {
+  /* remove 1990 button styling */
+  all: initial;
+  font: inherit;
+  color: inherit;
+  
+  cursor: pointer;
+  margin: 0px 10px 0px 0px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  transition: background-color 0.4s;
+}
+
+.profile-container input[type="file"]::file-selector-button:hover {
+  background-color: #0056b3;
+}
+
+/*
+  comment.js ----------------------------------------------
+*/
+
+.comment-details-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.comment-details {
+  padding: 20px;
+  background-color: #1e1e1e;
+  border: 2px solid #333; /* Darker border for contrast */
+  border-radius: 10px;
+}
+
+.comment-details img {
+  border: none;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.comment-details-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #555; /* Darker borders for inputs */
+  background-color: #333; /* Dark input fields */
+  color: #ddd; /* Light text for input */
+  box-sizing: border-box;
+  resize: none;
+}
+
+.comment-details-container button {
+  background-color: #007bff; /* Keeping the vibrant color for contrast */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.comment-details-container button:hover {
+  background-color: #0056b3;
+}
+
+.comment-details a {
+  text-decoration: none;
+  color: #555;
+  transition: all 0.4s;
+}
+.comment-details a:hover {
+  color: #4984b8;
+}
+
+/*
+  postDetails.js ----------------------------------------------
+*/
+
+.post-details-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.post-details {
+  padding: 20px;
+  background-color: #1e1e1e;
+  border: 2px solid #333; /* Darker border for contrast */
+  border-radius: 10px;
+}
+
+.post-details img {
+  border: none;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.post-details-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #555; /* Darker borders for inputs */
+  background-color: #333; /* Dark input fields */
+  color: #ddd; /* Light text for input */
+  box-sizing: border-box;
+  resize: none;
+}
+
+.post-details-container button {
+  background-color: #007bff; /* Keeping the vibrant color for contrast */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.post-details-container button:hover {
+  background-color: #0056b3;
+}
+
+.post-details a {
+  text-decoration: none;
+  color: #555;
+  transition: all 0.4s;
+}
+.post-details a:hover {
+  color: #4984b8;
+}
+
+/*
+  posts.js ----------------------------------------------
+*/
+.posts-container {
+  display: grid;
+  justify-content: center;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.post {
+  width: 50%;
+  border: 1px solid #333; /* Darker border for contrast */
+  border-radius: 10px;
+  padding: 20px;
+  padding-right: 200px;
+  margin: 0px auto 0px auto;
+  background-color: #1e1e1e; /* Slightly lighter than container for depth */
+  color: #ccc; /* Light text for readability */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100ch; /* Limit to 10 characters */ 
+  transition: transform 0.2s;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+.post img {
+  border: none;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.post button {
+  padding: 10px;
+  margin: 5px 10px 15px 0px; /* top right bottom left */
+  background-color: #2e2e2e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.post button:hover {
+  background-color: #ce2029;
+}
+
+.post-content h2 {
+  color: #fff; /* White text for titles */
+}
+
+.post-content p {
+  color: #bbb; /* Lighter gray for text */
+}
+
+.username-url {
+  color: #555;
+  transition: all 0.4s;
+  margin-top: 0px;
+}
+.username-url:hover {
+  color: #4984b8;
+}
+
+.post-form {
+  width: 50%;
+  padding: 20px;
+  background-color: #242424; /* Dark background for the form */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px auto 10px auto;
+}
+
+.post-form input {
+  padding: 10px;
+  margin: 5px auto 5px auto;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #555; /* Darker borders for inputs */
+  background-color: #333; /* Dark input fields */
+  color: #ddd; /* Light text for input */
+  box-sizing: border-box;
+  resize: none;
+}
+
+.post-form button {
+  display: flex;
+  width: 50%;
+  padding: 10px;
+  margin: 10px auto 5px auto;
+  justify-content: center;
+  background-color: #007bff; /* Keeping the vibrant color for contrast */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.post-form button:hover {
+  background-color: #0056b3;
+}
+
+.post-form textarea {
+  padding: 10px;
+  margin: 5px auto 5px auto;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #555; /* Darker borders for inputs */
+  background-color: #333; /* Dark input fields */
+  color: #ddd; /* Light text for input */
+  box-sizing: border-box;
+  resize: none;
+}
+
+.post-form-select-container {
+  display: flex;
+  margin: 5px auto 5px auto;
+}
+
+.post-form select {
+  margin: 0px 5px 0px 5px; 
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #555; /* Darker borders for inputs */
+  background-color: #333; /* Dark input fields */
+  color: #ddd; /* Light text for input */
+  box-sizing: border-box;
+  resize: none;
+}
+
+@keyframes opacityChange {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,5 @@
+*.pyc
+__pycache__/
+projectPlatform/projectPlatform/__pycache__/
+projectPlatform/__pycache__/
+projectPlatform/projectPlatform/__pycache__/__init__.cpython-310.pyc
